@@ -35,7 +35,7 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="my-portfolio/Manav_resume.htm" // 👈 Corrected path to the HTML file
+                href="my-portfolio/Manav_resume.pdf" // 👈 Corrected path to the PDF file
                 download // 👈 Added attribute to force download
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
