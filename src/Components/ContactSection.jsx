@@ -21,6 +21,8 @@ export const ContactSection = () => {
 
     setIsSubmitting(true);
 
+    // This is a placeholder for a real API call to send the form data.
+    // Replace this with your actual form submission logic.
     setTimeout(() => {
       toast({
         title: "Message sent!",
@@ -56,7 +58,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Email</h4>
                   <a
-                    href="mailto:hello@gmail.com"
+                    href="mailto:manavsingh89777@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     manavsingh89777@gmail.com
@@ -70,7 +72,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Phone</h4>
                   <a
-                    href="tel:+11234567890"
+                    href="tel:+919336975413"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     +91 9336975413
@@ -93,6 +95,7 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
+                {/* Replace # with your actual social media links */}
                 <a href="#" target="_blank">
                   <Linkedin />
                 </a>
@@ -111,11 +114,11 @@ export const ContactSection = () => {
 
           <div
             className="bg-card p-8 rounded-lg shadow-xs"
-            onSubmit={handleSubmit}
           >
             <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
 
-            <form className="space-y-6">
+            {/* The onSubmit handler has been moved to the form element */}
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label
                   htmlFor="name"
