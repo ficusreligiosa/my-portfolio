@@ -5,7 +5,7 @@ import NotFound from "./pages/NotFound"; // also switch to default export for co
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <Routes>
           <Route index element={<Home />} />
           <Route path="*" element={<NotFound />} />
