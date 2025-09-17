@@ -35,7 +35,7 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="/Manav_resume.pdf" // 👈 Corrected path to point directly to the file
+                href={process.env.PUBLIC_URL + "/Manav_resume.pdf"} // 👈 Corrected path to ensure download works on GitHub Pages
                 download // 👈 Added attribute to force download
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
