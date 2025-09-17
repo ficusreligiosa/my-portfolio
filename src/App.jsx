@@ -9,7 +9,7 @@ function App() {
       <HashRouter>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/skills" element={<SkillsSection />} /> 
+          <Route path="" element={<SkillsSection />} /> 
           <Route path="*" element={<NotFound />} />
         </Routes>
       </HashRouter>
