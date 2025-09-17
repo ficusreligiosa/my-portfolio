@@ -1,6 +1,6 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Skills from "./pages/SkillsSection"; // 👈 Corrected import name
+import {SkillsSection} from "./pages/SkillsSection"; // 👈 Corrected import name
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <HashRouter>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/skills" element={<Skills />} /> 
+          <Route path="/skills" element={<SkillsSection />} /> 
           <Route path="*" element={<NotFound />} />
         </Routes>
       </HashRouter>
